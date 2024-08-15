@@ -11,15 +11,6 @@ const nextConfig = {
           },
         ],
       },
-      {
-        source: "/app-route-config-header",
-        headers: [
-          {
-            key: "Netlify-Vary",
-            value: "query=search",
-          },
-        ],
-      },
     ];
   },
 };

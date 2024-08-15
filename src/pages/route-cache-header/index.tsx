@@ -10,7 +10,7 @@ export const getServerSideProps = (async ({ res, query }) => {
     `max-age=60, s-maxage=3600, stale-while-revalidate=1800`
   );
 
-  res.setHeader("Netlify-Vary", "query=search");
+  res.setHeader("netlify-vary", "query=search");
 
   return { props: { search: String(query.search || "") } };
 }) satisfies GetServerSideProps<PageProps>;

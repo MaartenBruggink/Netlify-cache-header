@@ -6,7 +6,7 @@ const nextConfig = {
         source: "/pages-route-config-header",
         headers: [
           {
-            key: "Netlify-Vary",
+            key: "netlify-vary",
             value: "query=search",
           },
         ],
